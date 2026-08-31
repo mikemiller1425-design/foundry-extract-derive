@@ -1,0 +1,16 @@
+# Stages on disk
+
+s01_targeting
+s02_discovery
+s03_dedupe
+s04_enrichment
+s05_capture
+s06_evolver
+s07_preview_build
+s08_validation
+s09_outreach_draft
+s10_approval
+s11_ledger
+s11_send
+s12_response
+s13_kpi
