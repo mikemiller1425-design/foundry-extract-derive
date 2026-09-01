@@ -1,13 +1,13 @@
 # Slice queue (from bee-bootstrap)
 
-## Done
+## Runnable
 - biz-by-zip — scraper CLI, fixture run passed
 
 ## Source packed, no CLI yet
-- biz-enrich — s04 + enrichment provider
+- biz-enrich — s04
+- biz-capture — s05 + HC-4 guard (never writes the live site)
 
-## Next (do not start all at once)
-- biz-capture — s05 + capture provider (URL in, snapshot out)
+## Next
 - biz-evolver — s06
 - biz-preview — s07 + preview-kit
 - biz-draft — s09 only (no send)
