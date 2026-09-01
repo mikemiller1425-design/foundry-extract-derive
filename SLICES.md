@@ -1,16 +1,12 @@
 # Slice queue (from bee-bootstrap)
 
-## Runnable
-- biz-by-zip — scraper CLI, fixture run passed
-
-## Source packed, no CLI
-- biz-enrich — s04
-- biz-capture — s05 + HC-4
-- biz-evolver — s06
-- biz-preview — s07 + preview-kit
-- biz-draft — s09 (does not send)
+## Runnable fixture CLIs
+- biz-by-zip — ZIP → list
+- biz-enrich — list → has_website
+- biz-capture — URL → snapshot (no live write)
+- biz-evolver — snapshot → plan JSON (no live LLM)
+- biz-preview — plan → static HTML (not the live site)
+- biz-draft — preview → email file (sent=0)
 
 ## Stay in the pile
 - s08 validation, s10 approval, s11 send, ledger, response, kpi, console
-
-Chain: ZIP → scrape → enrich → capture → evolve → preview → draft → human approve → send stays off
