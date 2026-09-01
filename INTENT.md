@@ -1,41 +1,13 @@
-# foundry-extract-derive — FROZEN v0.1
+# foundry-extract-derive — FROZEN v0.2
 
-This folder turns a partial or failed planet into **one derived SPEC**.
-It does not run the planet. Conductor only sees a file you copy.
+Turns a messy pile into one derived SPEC and one slice-package card.
+Does not run the pile. Does not implement inside Foundry.
 
-## Words (frozen)
+Product of a finished extract: a standalone slice repo (example: biz-by-zip).
+Conductor tickets are how a copy/test gets isolated. They are not the product.
 
-- **Planet** — real project folder (`bee-bootstrap/engine`)
-- **Law** — governing doc (`MASTER_BUILD_SPEC.md`)
-- **Stage** — named folder already on disk
-- **Milestone** — a “done when” line in the law
-- **Extract** — name planet + law, list stages, pick first observable milestone, KEEP / REPAIR / OUT
-- **Derive** — write one SPEC by binding only the law that protects that milestone
-- **Derived SPEC** — only export
-- **Handoff** — copy SPEC → Foundry `SPEC.md` → `foundry-advance spec` → `foundry-conductor/tasks/*.json`
+## Words
+Pile, card, ticket, slice package. Not planet, not blend, not recipe.
 
-Forbidden words here: blend, recipe, tasks-for-planets.
-
-## Tree (frozen)
-
-```
-foundry-extract-derive/
-  INTENT.md
-  PROCEDURE.md
-  inbox/
-  work/<ticket-id>/{PLANET,STAGES,CUT}.md
-  out/<ticket-id>/SPEC.md
-  logs/
-```
-
-## Hard rules (frozen)
-
-- No second copy of an engine under inbox
-- `out/` is SPEC files only
-- Conductor `tasks/` is JSON only
-- This folder never calls Places, SMTP, NAS, or Foundry
-- One ticket at a time until accepted
-
-## First ticket (already derived — do not re-derive)
-
-`out/biz_by_zip/SPEC.md`
+## First slice
+https://github.com/mikemiller1425-design/biz-by-zip
